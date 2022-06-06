@@ -129,13 +129,13 @@ The random variable x has a Poisson distribution with mean $\theta$.\\Show that 
     f(X,\theta) = e^{-n\theta} \prod \frac{\theta^{x_i}}{x_i!} = e^{-n\theta} \frac{\theta^{n\bar{x}}}{\prod x_i!}
   \end{align}
   \begin{align}
-    \frac{d(f(X,\theta))}{d\theta} = -ne^{-n\theta} \frac{\theta^{n\bar{x}}}{\prod x_i!} + n\bar{x}e^{-n\theta} \frac{\theta^{n\bar{x}-1}}{\prod x_i!}
+    \frac{\partial{f(X,\theta)}}{\partial{\theta}} = -ne^{-n\theta} \frac{\theta^{n\bar{x}}}{\prod x_i!} + n\bar{x}e^{-n\theta} \frac{\theta^{n\bar{x}-1}}{\prod x_i!}
   \end{align}
   \begin{align}
-    \frac{d(f(X,\theta))}{d\theta} = e^{-n\theta} \frac{\theta^{n\bar{x}}}{\prod x_i!} \brak{-n + 
+    \frac{\partial{f(X,\theta)}}{\partial{\theta}} = e^{-n\theta} \frac{\theta^{n\bar{x}}}{\prod x_i!} \brak{-n + 
     \frac{n\bar{x}}{\theta}}
   \end{align}
-  In order to maximise $f(X,\theta),\frac{d(f(X,\theta))}{d\theta}$ must be 0
+  In order to maximise $f(X,\theta),\frac{\partial{f(X,\theta)}}{\partial{\theta}}$ must be 0
   \begin{align}
     -n + \frac{n\bar{x}}{\theta} = 0\\
     \implies  \hat{\theta} = \bar{x}
